@@ -10,12 +10,8 @@ import { IconButton } from '@material-ui/core';
 function App() {
 
   const [input, setInput] = useState(''); // Input User Message
-  const [messages, setMessage] = useState([{ username: 'sandesh', message: 'Heyyyy' }, { username: 'sachin', message: "Whatsup" }]); // MessagesS
+  const [messages, setMessage] = useState([]); // MessagesS
   const [username, setUsername] = useState(''); // Username
-
-
-  console.log(input);
-  console.log(messages);
 
   // useState = variable in React
   // useEffect = run code on a condtion 
@@ -48,6 +44,7 @@ function App() {
 
   return (
     <div className="App">
+      <img src="https://facebookbrand.com/wp-content/uploads/2018/09/Header-e1538151782912.png?w=200&h=200sasa"></img>
       <h1>Messager Plus</h1>
       <h2>welcome {username} </h2>
       <form  className="app__form">
